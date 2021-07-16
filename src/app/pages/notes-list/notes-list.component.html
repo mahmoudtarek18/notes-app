@@ -1,0 +1,44 @@
+<!-- <div class="main-container">
+    <div class="search-bar-container">
+        <div class="search-bar-container">
+            <div class="field">
+                <p class="has-icon-left">
+                    <input class="input" type="text" placeholder="filter" #x (keyup)="filter(x.value)">
+                    <span>
+                        <i class="fas fa-search"></i>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="notes-list" [@listAnim]>
+        <app-note-card *ngFor="let note of notes; let i = index" [@itemAnim] (delete)="deleteNote(+i)" [link]="i"
+            [title]="note.title" [body]="note.body">
+        </app-note-card>
+    </div>
+
+    <button class="add-button" routerLink="new">+ add</button>
+</div> -->
+
+<div class="main-container">
+
+    <div class="search-bar-container">
+        <div class="field">
+            <p class="has-icon-left">
+                <input #filterInput class="input" type="text" (keyup)="filter(filterInput.value)" placeholder="Filter">
+                <span>
+                    <i class="fas fa-search"></i>
+                </span>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="notes-list" [@listAnim]>
+        <app-note-card *ngFor="let note of filteredNotes;" [link]="generateNoteUrl(note)" [@itemAnim]
+            (delete)="deleteNote(note)" [title]=" note.title" [body]="note.body"></app-note-card>
+    </div>
+
+    <button class="add-button" routerLink="new">+ Add</button>
+
+</div>

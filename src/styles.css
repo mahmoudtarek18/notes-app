@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+ 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: #fafcff;
+}
+
+input{
+    background-color: #f3f5fa;
+}
+
+.purple{color: #a59ad7;}
+.pink{color: #fe76c2;}
+.blue{color: #37c7f2;}
+.light-red{color: #fff3f3;}
+.light{color: #fafcff;}
+
+/* global styles */
+
+html, body{
+    font-size: 18px !important;
+    overflow: hidden;
+}
+

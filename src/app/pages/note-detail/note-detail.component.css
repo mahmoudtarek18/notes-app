@@ -1,0 +1,57 @@
+.form-container {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+input{
+    border: 1px solid #eee;
+    box-shadow: none;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+}
+
+textarea{
+    border: 1px solid #eee;
+    box-shadow: none;
+    width: 100%;
+    max-width: 100%;
+    height: 90px;
+    background-color: #f3f5fa;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.ng-invalid.ng-touched {
+    border-color: red;
+}
+
+.ng-invalid.ng-touched:focus {
+    box-shadow: 0px 0px 0px 2px rgba(red, 0.1);
+}
+
+.text-right{
+    text-align: right;
+}
+
+button{
+    display: inline-block;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.is-text{
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+button.is-success{
+    background-color: #29d000;
+}
+
+button.is-success:disabled{
+    cursor: not-allowed;
+}
